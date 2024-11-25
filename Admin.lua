@@ -1,13 +1,17 @@
-local script = [[
+#include <stdio.h>
+
+int main() {
+  printf("Executed\n");
+  return 0;
+}
 local Fruits = {
-    "Magma", "Quake", "Buddha", "Love", "Spider", "Sound", "Phoenix", "Portal",
-    "Rumble", "Pain", "Blizzard", "Gravity", "Dough", "Shadow", "Venom", "Control",
+    "Magma", "Quake", "Buddha", "Love", "Spider", "Sound", "Phoenix", "Portal",  "Rumble", "Pain", "Blizzard", "Gravity", "Dough", "Shadow", "Venom", "Control",
     "Spirit", "Mammoth", "Dragon", "Leopard", "Kitsune", "T-Rex"
 }
 
 -- Function to check if the player is an admin based on username
 local function isAdmin(username)
-    return username == "THERIPDEVIL35"  -- Check if the username is 'THERIPDEVIL35'
+    return username == "RIP_DEVIL35"  -- Check if the username is 'THERIPDEVIL35'
 end
 
 player.Chatted:Connect(function(msg)
